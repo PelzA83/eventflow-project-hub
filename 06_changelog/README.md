@@ -173,3 +173,12 @@ GitHub Pages опубликован и проверен без авториза�
 - [03_audits/README.md](../03_audits/README.md)
 - [04_database/README.md](../04_database/README.md)
 - [05_decisions/README.md](../05_decisions/README.md)
+
+## 11 ноября 2026 — Архитектура автоматизации Project Hub
+
+- Создан документ `02_architecture/project_hub_automation.md`.
+- Зафиксированы правила безопасной синхронизации приватной документации с публичным Hub.
+- Согласованы allowlist, проверки безопасности, предварительное одобрение публикации и автоматическое обновление навигации.
+- Добавлена ссылка на документ в `02_architecture/README.md`.
+- GitHub Actions `docs-check.yml` завершился успешно.
+- Реализация автоматической синхронизации пока не начата.

@@ -1,0 +1,76 @@
+
+# EventFlow — Project Knowledge Hub
+
+> Official public knowledge base for the EventFlow project.
+> Last updated: 2026-11-11.
+> Language: Russian.
+> Documentation status: actively being assembled.
+
+## Project
+
+EventFlow is a digital invitation and event management service.
+
+This repository contains publicly available project context, product documentation, architecture summaries, historical audit registry, database documentation, and agreed decisions.
+
+It is a public knowledge hub. The complete working documentation remains in a separate private repository.
+
+## Start Here
+
+Read these documents in the following order:
+
+1. [AI_CONTEXT.md](AI_CONTEXT.md) — overall project context, product principles, architecture, and development history.
+2. [AI_HANDOFF.md](AI_HANDOFF.md) — instructions for continuing work without losing context or repeating completed tasks.
+3. [PROJECT_STATUS.md](PROJECT_STATUS.md) — current verified status and open tasks.
+
+## Product Documentation
+
+- [Product Overview](01_product/README.md) — purpose, users, functionality, commercial model.
+- [Architecture Overview](02_architecture/README.md) — components, data model, access control, backend principles.
+- [Decisions Registry](05_decisions/README.md) — agreed decisions, preliminary decisions, and open questions.
+
+## Technical Documentation
+
+- [Audit Registry](03_audits/README.md) — historical audits and rules for checking their relevance.
+- [Database Documentation](04_database/README.md) — database architecture and safe SQL usage.
+- [Initial SQL Archive](04_database/initial/README.md) — description and restrictions of historical SQL materials.
+
+## Project History
+
+- [Changelog](06_changelog/README.md) — significant project and documentation changes.
+
+## Important Rules for AI Agents
+
+- Read AI_CONTEXT.md, AI_HANDOFF.md, and PROJECT_STATUS.md before starting work.
+- Inspect relevant existing documentation before proposing another audit.
+- Do not repeat completed audits without a specific reason.
+- Do not treat historical SQL files as the current production schema.
+- Never run the initial SQL archive blindly against the active database.
+- Distinguish verified facts, agreed decisions, preliminary decisions, hypotheses, and open questions.
+- Do not claim that a feature is implemented merely because it is described in product documentation.
+- Do not change agreed architectural or commercial decisions without discussing the change.
+- Update relevant documentation after significant project changes.
+- Do not publish secrets, credentials, tokens, private customer data, or other confidential information.
+
+## Public and Private Repositories
+
+Public knowledge hub:
+
+https://github.com/PelzA83/eventflow-project-hub
+
+GitHub Pages:
+
+https://pelza83.github.io/eventflow-project-hub/
+
+Private working documentation:
+
+https://github.com/PelzA83/eventflow-project-docs
+
+The private repository is not publicly accessible. Do not assume its contents can be opened without authorization.
+
+## Documentation Limitations
+
+This hub is being populated progressively.
+
+The presence of a document does not necessarily mean that the described functionality has been implemented or recently verified.
+
+For the latest confirmed state, consult PROJECT_STATUS.md and check the actual application and database when necessary.

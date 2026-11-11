@@ -205,3 +205,7 @@ GitHub Actions проверяет документацию и синтаксич
 - [PROJECT_STATUS.md](../PROJECT_STATUS.md)
 - [01_product/README.md](../01_product/README.md)
 - [05_decisions/README.md](../05_decisions/README.md)
+
+## Автоматизация Project Hub
+
+- [Архитектура автоматизации публикации](project_hub_automation.md) — правила безопасной синхронизации приватной документации с публичным Project Hub.

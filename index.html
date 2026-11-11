@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventFlow — Project Hub</title>
+  <meta name="description" content="Единая база знаний и актуальный контекст проекта EventFlow для разработчиков и AI-систем.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #10131a;
+      color: #edf0f6;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .container {
+      width: min(1050px, calc(100% - 40px));
+      margin: auto;
+    }
+    header {
+      padding: 70px 0 45px;
+      border-bottom: 1px solid #303642;
+    }
+    .eyebrow {
+      color: #9ba8bb;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: clamp(38px, 7vw, 68px); margin: 12px 0; }
+    h2 { font-size: 24px; margin-top: 0; }
+    .subtitle { color: #aeb8c8; max-width: 650px; }
+    section { padding: 38px 0; border-bottom: 1px solid #303642; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #191f2a;
+      border: 1px solid #303b4b;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .muted { color: #aeb8c8; font-size: 14px; }
+    a { color: #9ec5ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    li { margin: 9px 0; }
+    .status {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: #263d34;
+      color: #a9e5c5;
+      font-size: 12px;
+    }
+    footer { padding: 30px 0 50px; color: #8994a5; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="eyebrow">Project knowledge base · AI context</div>
+      <h1>EventFlow</h1>
+      <p class="subtitle">
+        Единая точка входа в документацию, архитектуру,
+        аудиты и историю разработки проекта.
+        Предназначена для команды и AI-систем.
+      </p>
+      <span class="status">Project Hub · Initial version</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>01. О проекте</h2>
+      <p>
+        EventFlow — сервис цифровых приглашений и впечатлений
+        для мероприятий. Проект объединяет создание приглашений,
+        управление гостями, RSVP и дополнительные возможности
+        взаимодействия с участниками мероприятий.
+      </p>
+    </section>
+
+    <section>
+      <h2>02. Документация для AI</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Контекст проекта</h3>
+          <p class="muted">Основная информация, принципы и текущее состояние.</p>
+          <a href="AI_CONTEXT.md">Открыть AI_CONTEXT.md →</a>
+        </div>
+        <div class="card">
+          <h3>Инструкция для AI</h3>
+          <p class="muted">Правила изучения проекта и продолжения разработки.</p>
+          <a href="AI_HANDOFF.md">Открыть AI_HANDOFF.md →</a>
+        </div>
+        <div class="card">
+          <h3>Текущий статус</h3>
+          <p class="muted">Этапы, задачи, прогресс и открытые вопросы.</p>
+          <a href="PROJECT_STATUS.md">Открыть PROJECT_STATUS.md →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>03. Основная документация</h2>
+      <ul>
+        <li><a href="01_product/README.md">Продуктовая концепция</a></li>
+        <li><a href="02_architecture/README.md">Архитектура</a></li>
+        <li><a href="03_audits/README.md">Аудиты</a></li>
+        <li><a href="05_decisions/README.md">Принятые решения</a></li>
+        <li><a href="06_changelog/README.md">История изменений</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>04. Техническая документация</h2>
+      <ul>
+        <li><a href="04_database/README.md">База данных</a></li>
+        <li><a href="04_database/initial/README.md">Архив первоначальных SQL-файлов</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>05. Источник документации</h2>
+      <p>
+        <a href="https://github.com/PelzA83/eventflow-project-docs">
+          Приватный рабочий репозиторий EventFlow
+        </a>
+      </p>
+      <p class="muted">
+        Публичная база содержит только специально подготовленные
+        и разрешённые к публикации материалы.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      EventFlow Project Hub · Knowledge base for continuous development
+    </div>
+  </footer>
+</body>
+</html>

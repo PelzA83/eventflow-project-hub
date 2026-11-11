@@ -51,6 +51,16 @@ Read these documents in the following order:
 - Update relevant documentation after significant project changes.
 - Do not publish secrets, credentials, tokens, private customer data, or other confidential information.
 
+## Public Source Code — Demo Snapshot
+
+Public demo repository:
+
+https://github.com/PelzA83/eventflow-demo
+
+The repository contains a sanitized snapshot of the frontend and SQL source files. It intentionally does not include the private working repository's Git history or its live Supabase connection settings. The invitation page backend is not connected in this public copy. The organizer page has a static demo mode; its code is not real authentication.
+
+This repository is not a mirror of the private working codebase and does not grant write access to it.
+
 ## Public and Private Repositories
 
 Public knowledge hub:

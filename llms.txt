@@ -1,26 +1,44 @@
-
 # EventFlow — Project Knowledge Hub
 
 > Official public knowledge base for the EventFlow project.
-> Last updated: 2026-11-11.
+> Last updated: 2026-11-13.
 > Language: Russian.
-> Documentation status: actively being assembled.
+> Documentation status: actively maintained.
 
 ## Project
 
 EventFlow is a digital invitation and event management service.
 
-This repository contains publicly available project context, product documentation, architecture summaries, historical audit registry, database documentation, and agreed decisions.
+This repository contains publicly available project context, product documentation, architecture summaries, historical audit registry, database documentation, agreed decisions, and safe handoff materials.
 
-It is a public knowledge hub. The complete working documentation remains in a separate private repository.
+It is a public knowledge hub. Full working specifications and documentation remain in private project repositories.
+
+## Main Priority — Release Two Working Prototypes
+
+The current top priority is to release two usable demonstration products as quickly as possible:
+
+1. New Year invitations — first, as the more compact prototype.
+2. Wedding invitations — second, on the shared base, with guest/family personalization and the QR scenario.
+
+The release sequence is:
+
+- shared functional base;
+- New Year template and complete invitation/RSVP flow;
+- wedding template and required wedding-specific features;
+- end-to-end verification of both prototypes.
+
+Do not let documentation, infrastructure, automation, or nonessential features delay these releases. Reuse working code. Implement only what the immediate prototype scenario requires. Do not build a universal editor or repeat audits without a concrete reason.
+
+Public summary of the release plan: [DEMO_RELEASE_PLAN.md](DEMO_RELEASE_PLAN.md). The full working plan and detailed agreed decisions are kept in private project materials.
 
 ## Start Here
 
 Read these documents in the following order:
 
-1. [AI_CONTEXT.md](AI_CONTEXT.md) — overall project context, product principles, architecture, and development history.
+1. [AI_CONTEXT.md](AI_CONTEXT.md) — overall project context, product principles, architecture, and current prototype priorities.
 2. [AI_HANDOFF.md](AI_HANDOFF.md) — instructions for continuing work without losing context or repeating completed tasks.
-3. [PROJECT_STATUS.md](PROJECT_STATUS.md) — current verified status and open tasks.
+3. [PROJECT_STATUS.md](PROJECT_STATUS.md) — current verified status, Demo limitations, and immediate next actions.
+4. [DEMO_RELEASE_PLAN.md](DEMO_RELEASE_PLAN.md) — public summary of the two-prototype release plan.
 
 ## Product Documentation
 
@@ -40,26 +58,35 @@ Read these documents in the following order:
 
 ## Important Rules for AI Agents
 
-- Read AI_CONTEXT.md, AI_HANDOFF.md, and PROJECT_STATUS.md before starting work.
+- Read AI_CONTEXT.md, AI_HANDOFF.md, PROJECT_STATUS.md, and DEMO_RELEASE_PLAN.md before starting work.
+- Treat prototype release as the main priority; prefer the shortest safe path to a working user scenario.
 - Inspect relevant existing documentation before proposing another audit.
 - Do not repeat completed audits without a specific reason.
 - Do not treat historical SQL files as the current production schema.
 - Never run the initial SQL archive blindly against the active database.
-- Distinguish verified facts, agreed decisions, preliminary decisions, hypotheses, and open questions.
-- Do not claim that a feature is implemented merely because it is described in product documentation.
+- Distinguish verified facts, agreed decisions, preliminary decisions, hypotheses, implemented features, and tested scenarios.
+- Do not claim that a feature is implemented merely because it is described in product documentation or has a UI element.
 - Do not change agreed architectural or commercial decisions without discussing the change.
 - Update relevant documentation after significant project changes.
 - Do not publish secrets, credentials, tokens, private customer data, or other confidential information.
+- Before editing a GitHub file, fetch its latest content and SHA; after editing, fetch it again and verify the result.
+- Make small sequential changes. After each change, provide one concrete verification step and wait for confirmation.
 
-## Public Source Code — Demo Snapshot
+## Public Source Code — Demo
 
 Public demo repository:
 
 https://github.com/PelzA83/eventflow-demo
 
-The repository contains a sanitized snapshot of the frontend and SQL source files. It intentionally does not include the private working repository's Git history or its live Supabase connection settings. The invitation page backend is not connected in this public copy. The organizer page has a static demo mode; its code is not real authentication.
+Demo start page:
 
-This repository is not a mirror of the private working codebase and does not grant write access to it.
+https://pelza83.github.io/eventflow-demo/demo.html
+
+The current public demonstration uses a SharedWorker and in-memory session data. It is not a persistent backend and must not be described as permanent storage or as connected to the production Supabase database.
+
+Open the guest and organizer demo pages through the start page so they receive the same demo session context. See PROJECT_STATUS.md for verified functionality and known limitations.
+
+The public repository is a demonstration copy, not a mirror of the private working codebase. It does not grant access to private source code, specifications, or the production database.
 
 ## Public and Private Repositories
 
@@ -71,16 +98,20 @@ GitHub Pages:
 
 https://pelza83.github.io/eventflow-project-hub/
 
-Private working documentation:
+Private working application and specifications repository:
+
+PelzA83/EventFlow
+
+Private additional documentation repository:
 
 https://github.com/PelzA83/eventflow-project-docs
 
-The private repository is not publicly accessible. Do not assume its contents can be opened without authorization.
+The private repositories are not publicly accessible. Do not assume their contents can be opened without authorization. The additional documentation repository and the main application/specifications repository are separate repositories.
 
 ## Documentation Limitations
 
-This hub is being populated progressively.
+This hub contains curated public summaries, not a complete mirror of private project materials.
 
 The presence of a document does not necessarily mean that the described functionality has been implemented or recently verified.
 
-For the latest confirmed state, consult PROJECT_STATUS.md and check the actual application and database when necessary.
+For the latest confirmed state, consult PROJECT_STATUS.md and check the actual application and database when necessary. The public Demo has temporary session storage; do not infer persistence from a successful in-session test.

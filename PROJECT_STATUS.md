@@ -298,8 +298,8 @@ Worker обновлён до v15 на обеих страницах. После 
 ### Последние опубликованные изменения
 
 - demo-worker.js: commit 7a9f77ad7c704bbaef2704b17aca05513ce62825, blob SHA 16cc6102e8947f0ebd8d47876cadbc9bd0c63b29;
-- demo-organizer.html: commit 636ffd644ae34b7975d0cb4eb5c4c9d871955b24, blob SHA 2ecc62254b99c590ee6424e5b5cbc48787c0192b;
-- demo-guest.html: commit aac8b52a8a80f44a27f721aa569d649ddf0e662e, blob SHA 03f651057c4613cffd168dd3bb7ae79721181d64;
+- demo-organizer.html: последний commit 373b92af64ac146c39e895e8e6821ccf86086c0a, blob SHA 42140ed78918267feb2564ffc7106cae403cfb38;
+- demo-guest.html: последний commit f2fcdde87b496e157faa102a789f097a5b480c6d, blob SHA a51aadb69b1e73e1746e11847977231fe9f8e55c;
 - SharedWorker согласованно повышен до v15 на страницах организатора и гостя;
 - PROJECT_STATUS.md обновлён: commit 8887e826683b89dc696e45342349ae1488d3dc7a.
 

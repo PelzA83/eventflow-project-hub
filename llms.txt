@@ -21,7 +21,7 @@ Current sequence:
 1. Documentation navigation and release plan alignment — completed Nov 14.
 2. Focused code review of the existing Demo scaffold — completed Nov 14; no confirmed P0 blockers found, several P1 mismatches recorded.
 3. Design the invitation templates using the existing functional base.
-4. Implement only the minimal P1 support: product-specific visual theme, New Year first/default selection, wedding signature visibility, invitation-level family greeting style.
+4. Use one fixed template per product; defer any user-facing theme selector. New Year is first/default on the demo start page, wedding signature is enabled by default, and mixed family greeting styles are rendered per guest.
 5. Prepare and demonstrate the New Year product first.
 6. Prepare and demonstrate the wedding product next.
 7. Defer nonessential improvements until demonstrations begin.
